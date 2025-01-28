@@ -6,7 +6,11 @@ const app = express();
 app.use(bodyParser.json());
 
 cors = require('cors');
-app.use(cors());
+app.use(cors({
+  origin: "https://front-tennis.vercel.app/",
+  methods: ["GET", "POST"],
+}));
+
 
 
 app.use("/api/tenis", matchRoutes);
