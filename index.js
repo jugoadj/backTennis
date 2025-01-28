@@ -7,7 +7,7 @@ app.use(bodyParser.json());
 
 cors = require('cors');
 app.use(cors({
-  origin: "https://front-tennis.vercel.app/",
+  origin: "https://front-tennis.vercel.app",
   methods: ["GET", "POST"],
 }));
 
